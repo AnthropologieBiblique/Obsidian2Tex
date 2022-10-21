@@ -444,6 +444,7 @@ $endif$
 \usepackage[french]{babel}
 $if(fontfamily)$
 \babelfont[french]{rm}{$fontfamily$}
+$endif$
 
 % TODO IF NEEDED
 % ==============
