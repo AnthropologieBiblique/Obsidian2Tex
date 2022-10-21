@@ -82,9 +82,6 @@ $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
 \usepackage{amsmath,amssymb}
-$if(fontfamily)$
-\usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
-$else$
 \usepackage{lmodern}
 $endif$
 $if(linestretch)$
@@ -446,6 +443,18 @@ $endif$
 $endif$
 
 \usepackage[french]{babel}
+$if(fontfamily)$
+\babelfont[french]{rm}{$fontfamily$}
+$else$
+
+% TODO IF NEEDED
+% ==============
+%\babelprovide[import=el]{greek}
+%\babelprovide[import=he]{hebrew}
+%\babelfont[french]{rm}[Ligatures=TeX,Numbers={Proportional,OldStyle}]{Linux Libertine O}
+%\babelfont[greek]{rm}[Ligatures=TeX]{Linux Libertine O}
+%\babelfont[hebrew]{rm}[Ligatures=TeX]{Ezra SIL SR}
+% ==============
 
 \begin{document}
 $if(has-frontmatter)$
