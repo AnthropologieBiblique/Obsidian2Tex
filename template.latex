@@ -83,7 +83,6 @@ $if(beamerarticle)$
 $endif$
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-$endif$
 $if(linestretch)$
 \usepackage{setspace}
 $endif$
